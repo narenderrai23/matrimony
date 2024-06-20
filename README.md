@@ -20,7 +20,7 @@ Ensure you have the following installed on your local machine:
 Open your terminal and run the following command to clone the repository:
 
 ```
-git clone https://github.com/narenderrai23/test-inter.git
+git clone https://github.com/narenderrai23/matrimony.git
 
 ```
 
