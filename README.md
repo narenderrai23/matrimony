@@ -1,103 +1,76 @@
-Project Setup and Instructions
-Introduction
+# Project Setup and Instruction
+
+## Introduction
+
 This guide provides step-by-step instructions to set up and run the project locally. Follow the steps below to clone the repository, migrate and seed the database, and start the server.
 
-Prerequisites
+## Prerequisites
+
 Ensure you have the following installed on your local machine:
 
-PHP
-Composer
-Git
-A web browser
-Installation Steps
-Clone the Repository
+-   PHP
+-   Composer
+-   Git
+-   A web browser
+
+## Installation Steps
+
+### Clone the Repository
 
 Open your terminal and run the following command to clone the repository:
 
-sh
-Copy code
+```
 git clone https://github.com/narenderrai23/test-inter.git
-Navigate to the Project Directory
 
-Change your working directory to the project folder:
+```
 
-sh
-Copy code
-cd test-inter
-Install Dependencies
+## Navigate to the Project Directory
 
-Install the necessary dependencies using Composer:
+`cd test-inter`
 
-sh
-Copy code
-composer install
-Environment Configuration
+### Install Dependencies
 
-Copy the example environment file and set up your environment variables:
+`composer install`
 
-sh
-Copy code
-cp .env.example .env
-Open the .env file and configure your database and other environment variables as needed.
+### Environment Configuration
 
-Generate Application Key
+`cp .env.example .env`
 
-Generate a new application key:
+### Run Database Migrations
 
-sh
-Copy code
+```
 php artisan key:generate
-Run Database Migrations
-
-Migrate the database schema:
-
-sh
-Copy code
 php artisan migrate
-Seed the Database
-
-Seed the database with initial data:
-
-sh
-Copy code
 php artisan db:seed
-Start the Development Server
+```
 
-Start the Laravel development server:
+## Accessing the Application
 
-sh
-Copy code
-php artisan serve
-Accessing the Application
-Open the Application
+### Open the Application
 
-Open your web browser and navigate to:
+`http://127.0.0.1:8000/`
 
-sh
-Copy code
-http://127.0.0.1:8000/
-Admin Dashboard
+### Admin Dashboard
 
-To access the admin dashboard, navigate to:
+`http://127.0.0.1:8000/admin/login`
 
-sh
-Copy code
-http://127.0.0.1:8000/admin/login
-Use the following credentials to log in:
+### Credentials
 
-sh
-Copy code
-'email' => 'admin@gmail.com',
-'password' => 'Pa$$w0rd!',
-User Login and Registration
+```
+Email : admin@gmail.com,
+Password : Pa$$w0rd!,
+```
 
-To log in as a user, navigate to:
+### User Login and Registration
 
-sh
-Copy code
+```
 http://127.0.0.1:8000/login
-To register as a new user, navigate to:
-
-sh
-Copy code
 http://127.0.0.1:8000/register
+
+```
+
+## Roles in the Project
+
+> **Admin**: Has access to the admin dashboard and can manage various aspects of the application.
+
+> **User**: Can log in and use the application as a regular user.
