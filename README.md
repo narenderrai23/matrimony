@@ -30,11 +30,19 @@ git clone https://github.com/narenderrai23/test-inter.git
 
 ### Install Dependencies
 
-`composer install`
+```
+composer install
+npm install
+npm run dev
+```
 
 ### Environment Configuration
 
-`cp .env.example .env`
+```
+copy .env.example .env
+or
+cp .env.example .env
+```
 
 ### Run Database Migrations
 
