@@ -26,7 +26,7 @@ git clone https://github.com/narenderrai23/matrimony.git
 
 ## Navigate to the Project Directory
 
-`cd test-inter`
+`cd matrimony`
 
 ### Install Dependencies
 
